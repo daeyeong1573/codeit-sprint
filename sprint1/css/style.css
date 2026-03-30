@@ -1,0 +1,586 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "ROKAFSans";
+  src: url("../fonts/ROKAFBold.ttf") format("truetype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Pretendard Variable";
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/PretendardVariable.woff2") format("woff2");
+}
+
+:root {
+  --primary-100: #3692ff;
+  --secondary-700: #374151;
+  --banner-background-color: #cfe5ff;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* ========================
+   BASE (PC)
+======================== */
+
+header {
+  position: fixed;
+  background-color: white;
+  height: 4.375rem;
+  width: 100%;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+}
+
+main {
+  width: 100%;
+  height: auto;
+  padding-top: 4.375rem;
+}
+
+.header-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.594rem 12.5rem;
+  max-width: 120rem;
+  margin: 0 auto;
+  height: 100%;
+}
+
+#logo-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  white-space: nowrap;
+}
+
+#logo-container p {
+  font-family: "ROKAFSans", sans-serif;
+  font-weight: 700;
+  font-size: 1.602rem;
+  margin-left: 0.531rem;
+  color: var(--primary-100);
+}
+
+.logo-image {
+  width: auto;
+  height: auto;
+}
+
+.login-btn {
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: "Pretendard Variable", sans-serif;
+  width: 8rem;
+  height: 3rem;
+  background-color: var(--primary-100);
+  flex-shrink: 0;
+}
+
+/* BANNER */
+.banner-section {
+  display: flex;
+  width: 100%;
+  background-color: var(--banner-background-color);
+  min-height: 33.75rem;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.banner-section .banner-inner {
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  max-width: 120rem;
+  padding: 12.5rem 25.313rem 0;
+  gap: 2rem;
+}
+
+.banner-text {
+  display: flex;
+  flex-direction: column;
+  font-family: "Pretendard Variable", sans-serif;
+  font-size: 2.5rem;
+  line-height: 140%;
+  color: var(--secondary-700);
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.banner-text a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  margin-bottom: 6.25rem;
+  color: white;
+  background-color: #3692ff;
+  border-radius: 2.5rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  height: 3.5rem;
+  width: 22.313rem;
+}
+
+.banner-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* INTRO */
+.intro-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hotpage-section,
+.search-section,
+.sell-section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin: 8.625rem 29.125rem;
+}
+
+.hotpage-image,
+.search-image,
+.sellPage-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.hotpage-text {
+  display: flex;
+  gap: 1.5rem;
+  flex-direction: column;
+  font-family: "Pretendard Variable", sans-serif;
+  font-weight: 700;
+  background-color: #fcfcfc;
+  padding-top: 6.438rem;
+  padding-bottom: 6.438rem;
+  padding-left: 4rem;
+  padding-right: 1.938rem;
+  width: auto;
+}
+
+.search-text {
+  display: flex;
+  gap: 1.5rem;
+  text-align: right;
+  flex-direction: column;
+  font-family: "Pretendard Variable", sans-serif;
+  font-weight: 700;
+  background-color: #fcfcfc;
+  padding-top: 6.438rem;
+  padding-bottom: 6.438rem;
+  padding-left: 0.75rem;
+  padding-right: 4rem;
+  width: auto;
+}
+
+.sellPage-text {
+  display: flex;
+  gap: 1.5rem;
+  flex-direction: column;
+  font-family: "Pretendard Variable", sans-serif;
+  background-color: #fcfcfc;
+  padding-top: 6.438rem;
+  padding-bottom: 6.438rem;
+  padding-left: 4rem;
+  width: auto;
+}
+
+.intro-text1 {
+  color: var(--primary-100);
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+.intro-text2 {
+  color: var(--secondary-700);
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 140%;
+}
+
+.intro-text3 {
+  color: var(--secondary-700);
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 2rem;
+}
+
+.clickable:hover {
+  cursor: pointer;
+}
+
+/* FOOTER */
+.footer-under-view {
+  background-color: #fcfcfc;
+  height: 8.625rem;
+}
+
+footer {
+  width: 100%;
+}
+
+.footer-banner {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: var(--banner-background-color);
+  overflow: hidden;
+}
+
+.footer-banner .banner-inner {
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  max-width: 120rem;
+  padding: 8.938rem 25.313rem 0;
+  gap: 2rem;
+}
+
+.footer-banner .banner-inner p {
+  display: flex;
+  margin-bottom: 7.031rem;
+}
+
+.info-footer {
+  background-color: #111827;
+}
+
+.footer-navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 120rem;
+  margin: 0 auto;
+  padding-top: 2rem;
+  padding-bottom: 6.75rem;
+  padding-left: 12.5rem;
+  padding-right: 12.5rem;
+}
+
+.footer-info-text {
+  font-family: "Pretendard Variable", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.footer-start-txt {
+  color: #9ca3af;
+  white-space: nowrap;
+}
+
+.footer-center-txt {
+  display: flex;
+  flex-direction: row;
+  gap: 1.875rem;
+}
+
+.footer-center-txt a {
+  color: #e5e7eb;
+  white-space: nowrap;
+}
+
+.footer-sns-ul {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.footer-sns-ul li {
+  display: flex;
+}
+
+/* ========================
+   TABLET (max 1024px)
+======================== */
+@media (max-width: 64rem) {
+  .header-navbar {
+    padding: 0.594rem 3rem;
+  }
+
+  .banner-section .banner-inner {
+    padding: 6rem 3rem 0;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .banner-text {
+    font-size: 2rem;
+    align-items: center;
+  }
+
+  .banner-text a {
+    width: 16rem;
+  }
+
+  .hotpage-section,
+  .search-section,
+  .sell-section {
+    margin: 5rem 3rem;
+  }
+
+  .hotpage-text,
+  .search-text,
+  .sellPage-text {
+    padding: 3rem 2rem;
+  }
+
+  .intro-text2 {
+    font-size: 2rem;
+  }
+
+  .intro-text3 {
+    font-size: 1.25rem;
+  }
+
+  .footer-banner .banner-inner {
+    padding: 6rem 3rem 0;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-navbar {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+/* ========================
+   MOBILE (max 768px)
+======================== */
+@media (max-width: 48rem) {
+  /* 헤더 */
+  .header-navbar {
+    padding: 0.594rem 1.5rem;
+  }
+
+  .login-btn {
+    width: 5.5rem;
+    height: 2.25rem;
+    font-size: 0.875rem;
+  }
+
+  /* 배너 */
+  .banner-section {
+    min-height: auto;
+  }
+
+  .banner-section .banner-inner {
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem 1.5rem 0;
+    text-align: center;
+    gap: 1.5rem;
+  }
+
+  .banner-text {
+    font-size: 1.5rem;
+    align-items: center;
+  }
+
+  .banner-text a {
+    width: 100%;
+    max-width: 18rem;
+    font-size: 1rem;
+    height: 3rem;
+  }
+
+  /* 인트로 섹션 — 세로로 쌓기 */
+  .hotpage-section,
+  .search-section,
+  .sell-section {
+    flex-direction: column;
+    margin: 3rem 1.5rem;
+  }
+
+  /* search는 HTML상 텍스트가 위에 있으므로 순서 유지 */
+  .hotpage-image,
+  .search-image,
+  .sellPage-image {
+    width: 100%;
+  }
+
+  .hotpage-text,
+  .search-text,
+  .sellPage-text {
+    padding: 2rem 1.5rem;
+    text-align: left;
+  }
+
+  .search-text {
+    text-align: left; /* 모바일에서는 오른쪽 정렬 해제 */
+  }
+
+  .intro-text1 {
+    font-size: 0.875rem;
+  }
+
+  .intro-text2 {
+    font-size: 1.5rem;
+  }
+
+  .intro-text3 {
+    font-size: 1rem;
+    line-height: 1.6rem;
+  }
+
+  /* 푸터 */
+  .footer-under-view {
+    height: 4rem;
+  }
+
+  .footer-banner .banner-inner {
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 1.5rem 0;
+    gap: 1.5rem;
+  }
+
+  .footer-navbar {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 2rem 1.5rem 3rem;
+    text-align: center;
+  }
+
+  .footer-center-txt {
+    gap: 1.25rem;
+  }
+}
+
+/* ========================
+   1920px 이상 — 여백만 커지도록
+======================== */
+@media (min-width: 120rem) {
+  .header-navbar {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .footer-navbar {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
